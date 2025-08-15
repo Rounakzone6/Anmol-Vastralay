@@ -10,18 +10,22 @@ import PlaceOrder from "./pages/PlaceOrder";
 import Cart from "./pages/Cart";
 import Product from "./pages/Product";
 import Login from "./pages/Login";
-import Shop from "./pages/Shop";
+import Shop from "./pages/Women";
+import Men from "./pages/Men";
+import Kids from "./pages/Kids";
+import Women from "./pages/Women";
 
 const App = () => {
   return (
-    <div className="p-3 bg-gray-200">
+    <div>
       <ToastContainer />
       <SearchBar />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/shop" element={<Shop />} />
-        <Route path="/about" element={<Home />} />
+        <Route path="/women" element={<Women />} />
+        <Route path="/men" element={<Men />} />
+        <Route path="/kids" element={<Kids />} />
         <Route path="/login" element={<Login />} />
         <Route path="/product/:productId" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
